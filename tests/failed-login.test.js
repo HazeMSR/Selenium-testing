@@ -42,7 +42,7 @@ describe('failed_login', function() {
     const actualMessage = await message.getText();
     const expectedMessage = 'Enter your userName and password correct';
 
-    assert.equal(actualMessage, expectedMessage, 'an unexpected message was display');
+    assert.equal(actualMessage, expectedMessage, 'an unexpected message was displayed');
   })
 
 })
