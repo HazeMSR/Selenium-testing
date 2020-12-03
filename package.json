@@ -1,0 +1,13 @@
+{
+  "name": "selenium-ide-mocha",
+  "version": "1.0.0",
+  "description": "training_program",
+  "main": "runner.js",
+  "repository": "TBD",
+  "author": "enroute",
+  "license": "MIT",
+  "dependencies": {
+    "mocha": "^8.2.1",
+    "selenium-webdriver": "^4.0.0-alpha.7"
+  }
+}
