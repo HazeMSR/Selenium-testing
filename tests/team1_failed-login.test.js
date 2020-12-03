@@ -29,13 +29,13 @@ describe('failed_login', function() {
     await driver.wait(() => {
       return userName.isDisplayed();
     }, 15000);
-    await driver.findElement(By.name("userName")).sendKeys("test@example.com")
+    await driver.findElement(By.name("userName")).sendKeys("admin")
 
     const password = await driver.findElement(By.name("password"));
     await driver.wait(() => {
       return password.isDisplayed();
     }, 15000);
-    await driver.findElement(By.name("password")).sendKeys("wrongPassword")
+    await driver.findElement(By.name("password")).sendKeys("admin")
 
     await driver.findElement(By.name("submit")).click()
 
