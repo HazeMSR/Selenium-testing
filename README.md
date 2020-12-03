@@ -1,8 +1,16 @@
 # selenium-ide-mocha
 ## A playground for selenium ide with mocha
+Here we can have some fun automating the test cases we create using the [selenium ide](https://www.selenium.dev/selenium-ide/) with [mocha](https://mochajs.org/)
+
+### Test cases
+[Team 1](https://enroutesystems.atlassian.net/wiki/spaces/ROCKSTARS/pages/86900928/Team+1)  
+[Team 2](https://enroutesystems.atlassian.net/wiki/spaces/ROCKSTARS/pages/88047622/Team+2)  
+[Team 3](https://enroutesystems.atlassian.net/wiki/spaces/ROCKSTARS/pages/87883784/Team+3)  
+[Team 4 - Labradors](https://enroutesystems.atlassian.net/wiki/spaces/ROCKSTARS/pages/86933588/Team+4+Labradors)  
+[Team 5](https://enroutesystems.atlassian.net/wiki/spaces/ROCKSTARS/pages/87949323)
 
 ### Install dependencies
-It is highly recommended you run this project with [yarn](https://classic.yarnpkg.com/en/docs/install/#mac-stable) instead of npm. 
+It is highly recommended that you run this project with [yarn](https://classic.yarnpkg.com/en/docs/install/#mac-stable) instead of npm. 
 
 Run ```yarn``` to install the dependencies
 
