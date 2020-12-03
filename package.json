@@ -10,7 +10,10 @@
     "test": "./node_modules/mocha/bin/mocha tests/"
   },
   "dependencies": {
-    "mocha": "^8.2.1",
+    "chromedriver": "^87.0.1",
     "selenium-webdriver": "^4.0.0-alpha.7"
+  },
+  "devDependencies": {
+    "mocha": "^8.2.1"
   }
 }
