@@ -2,7 +2,7 @@
 const { Builder, By, Key, until } = require('selenium-webdriver')
 const assert = require('assert')
 
-describe('login_insurance', function() {
+describe('test_login', function() {
   this.timeout(30000)
   let driver
   let vars
@@ -13,16 +13,13 @@ describe('login_insurance', function() {
   afterEach(async function() {
     await driver.quit();
   })
-  it('login_insurance', async function() {
+  it('test_login', async function() {
     await driver.get("http://demo.guru99.com/insurance/v1/index.php")
-    await driver.manage().window().setRect(1288, 698)
+    await driver.manage().window().setRect(2576, 1056)
     await driver.findElement(By.id("email")).click()
     await driver.findElement(By.id("email")).sendKeys("usuario")
-    {
-      const element = await driver.findElement(By.name("submit"))
-      await driver.actions({ bridge: true }).moveToElement(element).perform()
-    }
-    await driver.findElement(By.id("password")).sendKeys("password")
+    await driver.findElement(By.id("password")).click()
+    await driver.findElement(By.id("password")).sendKeys("123456")
     await driver.findElement(By.name("submit")).click()
   })
 })
