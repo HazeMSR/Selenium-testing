@@ -11,11 +11,8 @@
   },
   "dependencies": {
     "chromedriver": "^87.0.1",
-<<<<<<< HEAD
     "mocha": "^8.2.1",
-=======
     "global": "^4.4.0",
->>>>>>> aa5c7c81362c20a0a800bb882cab71459a84a4e0
     "selenium-webdriver": "^4.0.0-alpha.7"
   },
   "devDependencies": {
