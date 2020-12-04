@@ -7,6 +7,11 @@ const chromedriver = require('chromedriver')
 chrome.setDefaultService(new chrome.ServiceBuilder(chromedriver.path).build())
 
 
+const chrome = require('selenium-webdriver/chrome')
+const chromedriver = require('chromedriver')
+
+chrome.setDefaultService(new chrome.ServiceBuilder(chromedriver.path).build())
+
 describe('failed_login', function() {
   this.timeout(30000)
   let driver
@@ -51,3 +56,4 @@ describe('failed_login', function() {
   })
 
 })
+
