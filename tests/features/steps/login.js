@@ -2,7 +2,7 @@ const { Given, When, Then } = require('@cucumber/cucumber');
 const assert = require('assert');
 const loginPage = require('../../page_objects/login.js');
 
-Given('the credentials are in correct', async function () {
+Given('the credentials are incorrect', async function () {
     await loginPage.typeUsername("test@example.com");
     await loginPage.typePassword("wrongPassword");
 });
