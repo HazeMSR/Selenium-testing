@@ -1,6 +1,6 @@
 # selenium-ide-mocha
-## A playground for selenium ide with mocha
-Here we can have some fun automating the test cases we create using the [selenium ide](https://www.selenium.dev/selenium-ide/) with [mocha](https://mochajs.org/)
+## A playground for selenium ide with mocha and cucumber
+Here we can have some fun automating the test cases we create using the [selenium ide](https://www.selenium.dev/selenium-ide/) with [mocha](https://mochajs.org/) 
 
 ### Test cases
 [Team 1](https://enroutesystems.atlassian.net/wiki/spaces/ROCKSTARS/pages/86900928/Team+1)  
@@ -16,11 +16,20 @@ Run ```yarn``` to install the dependencies
 
 ### Running the tests
 
-To run the tests you can either use
+To run the tests with __mocha__ you can either use
 ```
 ./node_modules/mocha/bin/mocha tests/
 ```
 or 
 ```
 yarn test
+```
+
+To run the tests with __cucumber__ you can either use
+```
+./node_modules/.bin/cucumber-js tests/features/
+```
+or 
+```
+yarn cucumber
 ```
