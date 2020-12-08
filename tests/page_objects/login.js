@@ -26,6 +26,10 @@ module.exports = {
     },
 
     typePassword: async (text) => {
+        await driver.wait(() => {
+          return driver.findElement(By.name("password")).isDisplayed();
+        }, 15000);
+
         await driver.findElement(By.name("password")).sendKeys(text);
     }
 }

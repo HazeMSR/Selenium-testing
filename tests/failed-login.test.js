@@ -24,10 +24,6 @@ describe('failed_login', function() {
     await driver.manage().window().setRect(1440, 1080)
 
     await loginPage.typeUsername("test@example.com");
-
-    await driver.wait(() => {
-      return loginPage.password().isDisplayed();
-    }, 15000);
     await loginPage.typePassword("wrongPassword");
 
     await loginPage.submitButton().click()
@@ -39,7 +35,7 @@ describe('failed_login', function() {
     const actualMessage = await loginPage.loginMessage().getText();
     const expectedMessage = 'Enter your userName and password correct';
 
-    assert.notEqual(actualMessage, expectedMessage, 'an unexpected message was displayed');
+    assert.equal(actualMessage, expectedMessage, 'an unexpected message was displayed');
   })
 
 })
