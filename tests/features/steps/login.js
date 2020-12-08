@@ -11,13 +11,14 @@ When('the user attempts to log in', async function () {
     await loginPage.submitButton().click()
 });
 
-Then('an error message is displayed', async function () {
+Then('a(n) {word} message is displayed', async function (messageType) {
     await driver.wait(() => {
       return loginPage.loginMessage().isDisplayed();
     }, 15000);
 
     const actualMessage = await loginPage.loginMessage().getText();
-    const expectedMessage = 'Enter your userName and password correct';
+    const expectedMessage = messageType === 'error' ? 'Enter your userName and password correct'
+        : 'something else';
 
     assert.equal(actualMessage, expectedMessage, 'an unexpected message was displayed');
 });
