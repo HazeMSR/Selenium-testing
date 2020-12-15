@@ -6,11 +6,11 @@ Feature: login
         Then an error message is displayed
 
     Scenario Outline: User tries to log in with valid data.
-        Given the user navigates to the website 
+        Given the user navigates to the website  
         When the user enters <user> as username
         And the user enters <pass> as password
         And clicks on Submit button 
-        Then an error message is displayed
+        Then a success message is displayed
     
     Examples:
     |   user   |     pass    | 

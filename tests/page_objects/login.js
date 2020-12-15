@@ -1,35 +1,49 @@
-const { By } = require('selenium-webdriver')
+const { By } = require("selenium-webdriver");
 
 module.exports = {
-    username: () => {
-        return driver.findElement(By.name("userName"));
-    },
+	username: () => {
+		return driver.findElement(By.name("userName"));
+	},
 
-    password: () => {
-        return driver.findElement(By.name("password"));
-    },
+	password: () => {
+		return driver.findElement(By.name("password"));
+	},
 
-    submitButton: () => {
-        return driver.findElement(By.name("submit"));
-    },
+	submitButton: () => {
+		return driver.findElement(By.name("submit"));
+	},
 
-    loginMessage: () => {
-        return driver.findElement(By.tagName("span"));
-    },
-    
-    typeUsername: async (text) => {
-        await driver.wait(() => {
-          return driver.findElement(By.name("userName")).isDisplayed();
-        }, 15000);
+	loginMessage: () => {
+		return driver.findElement(By.tagName("span"));
+	},
 
-        await driver.findElement(By.name("userName")).sendKeys(text);
-    },
+	getActualTitle: () => {
+		return driver.getTitle();
+	},
 
-    typePassword: async (text) => {
-        await driver.wait(() => {
-          return driver.findElement(By.name("password")).isDisplayed();
-        }, 15000);
+	logoutButton: () => {
+		return driver.findElement(By.linkText("SIGN-OFF"));
+	},
 
-        await driver.findElement(By.name("password")).sendKeys(text);
-    }
-}
+	successLoginMessage: () => {
+		return driver.findElement(
+			By.xpath("//h3[contains(text(),'Login Successfully')]")
+		);
+	},
+
+	typeUsername: async (text) => {
+		await driver.wait(() => {
+			return driver.findElement(By.name("userName")).isDisplayed();
+		}, 15000);
+
+		await driver.findElement(By.name("userName")).sendKeys(text);
+	},
+
+	typePassword: async (text) => {
+		await driver.wait(() => {
+			return driver.findElement(By.name("password")).isDisplayed();
+		}, 15000);
+
+		await driver.findElement(By.name("password")).sendKeys(text);
+	},
+};

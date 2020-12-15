@@ -1,7 +1,7 @@
 const { Builder } = require("selenium-webdriver");
 const { Before, After } = require("@cucumber/cucumber");
 const chrome = require("selenium-webdriver/chrome");
-const chromedriver = require("chromedriver");
+global.chromedriver = require("chromedriver");
 
 chrome.setDefaultService(new chrome.ServiceBuilder(chromedriver.path).build());
 
@@ -16,5 +16,6 @@ Before({ timeout: 100 * 1000 }, async () => {
 });
 
 After(async () => {
-	driver.quit();
+	global.driver.quit();
+	chromedriver.stop();
 });

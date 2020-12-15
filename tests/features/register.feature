@@ -1,8 +1,7 @@
 Feature: Register Section
     
-    Scenario: I register a valid user
-        Given I navigates to the website
-        When I enter to the REGISTER section
-        And full-fill the form with valid data
-        And click on the "Send" button
+    Scenario: The user register a valid new account
+        Given the user navigates to the REGISTER section
+        When the user fills the form with valid data
+        And clicks on the Send button
         Then a verification message is displayed
