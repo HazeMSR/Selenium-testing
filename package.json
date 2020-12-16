@@ -11,6 +11,7 @@
     "cucumber": "./node_modules/.bin/cucumber-js tests/features/link-not-working.feature"
   },
   "dependencies": {
+    "selenium": "^2.20.0",
     "selenium-webdriver": "^4.0.0-alpha.8"
   },
   "devDependencies": {

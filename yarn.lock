@@ -1548,6 +1548,11 @@ selenium-webdriver@^4.0.0-alpha.8:
     tmp "^0.1.0"
     ws "^7.3.1"
 
+selenium@^2.20.0:
+  version "2.20.0"
+  resolved "https://registry.yarnpkg.com/selenium/-/selenium-2.20.0.tgz#f515b1a162de93c2ccef2fc0ca33f3b5543e38c8"
+  integrity sha1-9RWxoWLek8LM7y/AyjPztVQ+OMg=
+
 "semver@2 || 3 || 4 || 5":
   version "5.7.1"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.7.1.tgz#a954f931aeba508d307bbf069eff0c01c96116f7"

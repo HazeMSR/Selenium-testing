@@ -10,12 +10,14 @@ const { Before, After } = require('@cucumber/cucumber');
 const chrome = require('selenium-webdriver/chrome')
 const chromedriver = require('chromedriver')
 
+chrome.setDefaultService(new chrome.ServiceBuilder(chromedriver.path).build());
+
 Before(async () => {
     global.driver = await new Builder().forBrowser('chrome')
       .setChromeOptions(new chrome.Options().headless())
       .build()
 
-    await driver.get("http://demo.guru99.com/test/newtours/register.php")
+    await driver.get("http://demo.guru99.com/test/newtours/")
     await driver.manage().window().setRect(1440, 1080)
    
 });
@@ -26,7 +28,7 @@ After(async () => {
 
 // Given -----------------------------------------------------------
 Given("the user clicks on the link", async function(){
-    await link_Page.button();
+    await link_Page.broken_link().click();
 });//End of Given
 
 //Then --------------------------------------------------------------

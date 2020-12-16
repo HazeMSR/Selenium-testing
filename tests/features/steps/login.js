@@ -4,7 +4,7 @@ const loginPage = require('../../page_objects/login.js');
 
 var {setDefaultTimeout} = require('cucumber');
 setDefaultTimeout(60 * 1000);
-  
+
 const { Builder } = require('selenium-webdriver')
 const { Before, After } = require('@cucumber/cucumber');
 const chrome = require('selenium-webdriver/chrome')
