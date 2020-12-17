@@ -1,14 +1,14 @@
 const {By} = require('selenium-webdriver');
 
 module.exports = {
-    userName: () => {
-        driver.findElement(By.name('userName'))
+    setUserName: (username) => {
+        driver.findElement(By.name('userName')).sendKeys(username)
     },
-    password: () => {
-        driver.findElement(By.name('password'))
+    setPassword: (password) => {
+        driver.findElement(By.name('password')).sendKeys(password)
     },
-    submit: () => {
-        driver.findElement(By.name('submit'))
+    clickSubmit: () => {
+        driver.findElement(By.name('submit')).click()
     },
     loginMessageTitle: () => {
         driver.findElement(By.css('td>table>tbody>tr>td>h3'))

@@ -7,10 +7,12 @@
   "author": "enroute",
   "license": "MIT",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha tests/"
+    "test": "./node_modules/mocha/bin/mocha tests/",
+    "cucumber": "./node_modules/.bin/cucumber-js tests/features/login.feature"
   },
   "dependencies": {
     "chromedriver": "^87.0.1",
+    "cucumber": "^7.0.0-rc.0",
     "mocha": "^8.2.1",
     "selenium-webdriver": "^4.0.0-alpha.7"
   }
